@@ -1,22 +1,27 @@
-# Hi, I'm Nguyễn Thành Nhất Nam 👋
+<h1 align="center">Hi, I'm Nguyễn Thành Nhất Nam 👋</h1>
 
-**Flutter & Dart · Information Technology student at HUTECH · Open to mobile internships**
+<p align="center"><strong>Information Technology student at HUTECH · Flutter &amp; web development</strong></p>
 
-I build mobile interfaces and connect them to APIs and cloud data. I like working through the details of a feature, from the screen a user sees to how the app saves and retrieves their data.
+![Animated terminal banner with a mobile interface, web code, and a quality check](./assets/profile-terminal.svg)
 
-## 📱 Featured project
+## About me
 
-### [GreenKitchen](https://github.com/nguyennhatnam213654-creator/GreenKitchen) · Flutter recipe app
+I build Flutter interfaces that connect to APIs and cloud data. I also work on web features, from Vue templates and PDF exports to ASP.NET Core business logic and QA.
 
-- Combined Vietnamese recipes from TheMealDB with approved community recipes from Cloud Firestore in one home and search experience.
-- Built a recipe submission form and an admin review flow with pending, approved, and rejected statuses.
-- Added light and dark modes with Provider and saved the user's preference with SharedPreferences.
+## Tech stack
 
-`Flutter` · `Dart` · `Cloud Firestore` · `Provider` · `REST APIs`
-
-## 🛠️ Other projects
-
-| Project | What I worked on |
+| Area | Tools |
 | --- | --- |
-| [SmartLib AI](https://github.com/nguyennhatnam213654-creator/LV23-088-Library-Revenue-AI) | Implemented overdue fine calculation, built a four-sheet Excel report, and wrote test cases for library workflows. |
-| SmartCV AI | Built 13 editable Vue CV templates, fixed PDF layout issues, and developed a job posting and approval flow. |
+| **Mobile** | Flutter · Dart · Provider · SharedPreferences |
+| **Web** | C# · ASP.NET Core · Vue.js · React |
+| **Data & workflow** | Cloud Firestore · SQL Server · REST APIs · Git |
+
+![Animated teal and violet divider](./assets/animated-divider.svg)
+
+## Projects
+
+| Project | My contribution | Stack |
+| --- | --- | --- |
+| **[GreenKitchen](https://github.com/nguyennhatnam213654-creator/GreenKitchen)** | Combined TheMealDB and approved Firestore recipes in one search experience. Built recipe submission and admin review. | Flutter · Dart · Firestore |
+| **[SmartLib AI](https://github.com/nguyennhatnam213654-creator/LV23-088-Library-Revenue-AI)** | Implemented configurable overdue fines and built a four-sheet Excel export. Wrote test cases for library workflows. | React · C# · ASP.NET Core |
+| **SmartCV AI** | Built 13 editable CV templates, fixed PDF layout issues, and developed the job posting and approval flow. | Vue.js · C# · ASP.NET Core |

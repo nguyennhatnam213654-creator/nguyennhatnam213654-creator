@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="16" viewBox="0 0 900 16" role="img" aria-labelledby="title">
+  <title id="title">Teal and violet animated divider</title>
+  <defs>
+    <linearGradient id="rail">
+      <stop stop-color="#5DE1D1" stop-opacity=".1"/>
+      <stop offset=".5" stop-color="#79B9FF" stop-opacity=".8"/>
+      <stop offset="1" stop-color="#BF9AFF" stop-opacity=".1"/>
+    </linearGradient>
+    <linearGradient id="pulse">
+      <stop stop-color="#5DE1D1" stop-opacity="0"/>
+      <stop offset=".45" stop-color="#5DE1D1"/>
+      <stop offset=".72" stop-color="#79B9FF"/>
+      <stop offset="1" stop-color="#BF9AFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .pulse { animation: sweep 8s linear infinite; }
+    @keyframes sweep { from { transform: translateX(-190px); } to { transform: translateX(910px); } }
+    @media (prefers-reduced-motion: reduce) { .pulse { animation: none; opacity: 0; } }
+  </style>
+  <rect x="12" y="7.5" width="876" height="1" rx=".5" fill="url(#rail)"/>
+  <rect class="pulse" y="7" width="182" height="2" rx="1" fill="url(#pulse)"/>
+</svg>
