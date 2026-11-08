@@ -2,7 +2,7 @@
 
 <p align="center"><strong>Information Technology student at HUTECH · Flutter &amp; web development</strong></p>
 
-![Animated terminal banner with a mobile interface, web code, and a quality check](./assets/profile-terminal.svg)
+![Animated terminal banner showing a phone and web browser connected through a REST API](./assets/profile-terminal.svg)
 
 ## About me
 

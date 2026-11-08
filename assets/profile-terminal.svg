@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="214" viewBox="0 0 900 214" role="img" aria-labelledby="title desc">
   <title id="title">Nam's development workspace</title>
-  <desc id="desc">An animated terminal banner for mobile development, web development, and software quality.</desc>
+  <desc id="desc">An animated terminal banner showing a phone and a web browser linked through a REST API.</desc>
   <defs>
     <linearGradient id="panel" x2="1" y2="1" gradientUnits="objectBoundingBox">
       <stop stop-color="#101927"/>
@@ -19,10 +19,11 @@
     .mono { font-family: ui-monospace, Consolas, monospace; }
     .sans { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
     .cursor { animation: breathe 3s ease-in-out infinite; }
-    .trace { animation: flow 7s linear infinite; }
+    .trace { animation: flow 4s linear infinite; }
+    .trace-back { animation: flow 4s linear infinite reverse; }
     @keyframes breathe { 0%, 100% { opacity: .85; } 50% { opacity: .28; } }
-    @keyframes flow { to { stroke-dashoffset: -42; } }
-    @media (prefers-reduced-motion: reduce) { .cursor, .trace { animation: none; } }
+    @keyframes flow { to { stroke-dashoffset: -24; } }
+    @media (prefers-reduced-motion: reduce) { .cursor, .trace, .trace-back { animation: none; } }
   </style>
   <rect x=".5" y=".5" width="899" height="213" rx="17" fill="url(#panel)" stroke="#304361"/>
   <path d="M1 38h898" stroke="#283954"/>
@@ -34,30 +35,30 @@
   <rect x="541" y="52" width="341" height="145" rx="12" fill="url(#dots)"/>
   <text x="31" y="78" class="mono" font-size="12" font-weight="600" letter-spacing="1.5" fill="#5DE1D1">$ BUILD / CONNECT / TEST</text>
   <text x="29" y="126" class="sans" font-size="39" font-weight="750" fill="#F0F6FF">Mobile &amp; web development</text>
-  <text x="31" y="157" class="sans" font-size="16" fill="#BDCAE3">Flutter · REST APIs · Software quality</text>
+  <text x="31" y="157" class="sans" font-size="16" fill="#BDCAE3">Flutter · ASP.NET Core · REST APIs</text>
   <rect x="31" y="176" width="150" height="3" rx="1.5" fill="url(#accent)"/>
   <rect class="cursor" x="190" y="173" width="7" height="9" rx="1.5" fill="#5DE1D1" opacity=".85"/>
-  <g fill="none" stroke="#385373" stroke-width="1.5">
-    <path d="M602 80h38q12 0 12 12v23q0 12 12 12h24"/>
-    <path d="M602 174h38q12 0 12-12v-23q0-12 12-12h24"/>
-    <path d="M743 127h79"/>
+  <g fill="none" stroke="#395477" stroke-width="1.5">
+    <path d="M624 111H671M741 111H788"/>
+    <path d="M624 124H671M741 124H788"/>
   </g>
-  <g class="trace" fill="none" stroke="url(#accent)" stroke-width="2" stroke-linecap="round" stroke-dasharray="10 32">
-    <path d="M602 80h38q12 0 12 12v23q0 12 12 12h24"/>
-    <path d="M602 174h38q12 0 12-12v-23q0-12 12-12h24"/>
-    <path d="M743 127h79"/>
+  <g fill="none" stroke-linecap="round" stroke-width="2.5" stroke-dasharray="8 16">
+    <path class="trace" d="M624 111H671M741 111H788" stroke="#5DE1D1"/>
+    <path class="trace-back" d="M624 124H671M741 124H788" stroke="#BF9AFF"/>
   </g>
-  <g fill="#121F33" stroke="#486287">
-    <rect x="550" y="58" width="52" height="44" rx="10"/>
-    <rect x="550" y="152" width="52" height="44" rx="10"/>
-    <rect x="688" y="97" width="55" height="60" rx="13"/>
-    <rect x="822" y="105" width="52" height="44" rx="10"/>
-  </g>
+  <rect x="548" y="79" width="76" height="76" rx="14" fill="#14283A" stroke="#4D988F"/>
+  <rect x="671" y="90" width="70" height="55" rx="13" fill="#15263E" stroke="#5075A5"/>
+  <rect x="788" y="79" width="76" height="76" rx="14" fill="#23233E" stroke="#7968A8"/>
   <g fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <path d="m574 74-6 6 6 6m5-12 6 6-6 6" stroke="#5DE1D1"/>
-    <path d="M568 168h16v12h-16zm0 3h16" stroke="#79B9FF"/>
-    <rect x="706" y="110" width="19" height="34" rx="4" stroke="#D4E5FF"/>
-    <path d="M712 115h7m-6 24h5" stroke="#5DE1D1"/>
-    <path d="m842 127 4 4 8-8" stroke="#BF9AFF"/>
+    <rect x="574" y="97" width="24" height="40" rx="5" stroke="#A2F0E4"/>
+    <path d="M581 103h10m-8 28h6" stroke="#5DE1D1"/>
+    <path d="m699 111-6 6 6 6m14-12 6 6-6 6m-5-15-4 18" stroke="#91C7FF"/>
+    <rect x="804" y="102" width="44" height="30" rx="4" stroke="#DAC5FF"/>
+    <path d="M804 110h44m-35-4h.1m5 0h.1m5 0h.1m-10 11h12m-12 7h25" stroke="#BF9AFF"/>
+  </g>
+  <g class="mono" font-size="11" font-weight="600" letter-spacing="1.2" text-anchor="middle">
+    <text x="586" y="178" fill="#A2F0E4">MOBILE</text>
+    <text x="706" y="178" fill="#A9CCFF">REST API</text>
+    <text x="826" y="178" fill="#DAC5FF">WEB</text>
   </g>
 </svg>
